@@ -7,5 +7,3 @@ edition = "2021"
 
 [dependencies]
 lucian = "0.2"
-[patch.crates-io]
-lucian = { path = '../lucian' }
