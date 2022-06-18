@@ -25,9 +25,9 @@ dependencies = [
 
 [[package]]
 name = "lucian"
-version = "0.2.8"
+version = "0.2.9"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "cc902fa33322d5758fe6de0b25c0ff8eb14c76901e96a2256636175a4804dbe0"
+checksum = "188f63eb64d279167e96556446ce803e1b7984dbc2854aed1f827c95dd66906e"
 dependencies = [
  "mio",
  "sni_shuffle",

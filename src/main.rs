@@ -1,9 +1,17 @@
-use lucian::app::App;
+use lucian::log::Log;
+use lucian::server::Server;
 use lucian::hub::line::LineType;
 
-const LISTEN_ADDR:&str = "0.0.0.0:3389";
+const APP_PORT:usize = 3389;
+const LOG_PORT:usize = 6000;
 
 fn main() {
-    let mut app = App::new(LISTEN_ADDR,LineType::Operator);
+    Log::init();
+    let mut app = Server::new(APP_PORT,LineType::Operator);
+    let mut log = Server::new(LOG_PORT,LineType::Log);
+    std::thread::spawn(move ||{
+        log.start();
+    });
     app.start();
 }
+
