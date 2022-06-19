@@ -1,6 +1,6 @@
+use lucian::gate::hub::line_header::LineType;
 use lucian::log::Log;
 use lucian::server::Server;
-use lucian::hub::line::LineType;
 
 const APP_PORT:usize = 3389;
 const LOG_PORT:usize = 6000;
@@ -8,9 +8,9 @@ const LOG_PORT:usize = 6000;
 fn main() {
     Log::init();
     let mut app = Server::new(APP_PORT,LineType::Operator);
-    let mut log = Server::new(LOG_PORT,LineType::Log);
+    let mut http = Server::new(LOG_PORT,LineType::Http);
     std::thread::spawn(move ||{
-        log.start();
+        http.start();
     });
     app.start();
 }
