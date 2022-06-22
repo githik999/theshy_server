@@ -1,11 +1,14 @@
 [package]
-name = "shy_server"
+name = "theshy_server"
 version = "0.1.0"
 edition = "2021"
-
+description = "a socks5 proxy written in Rust (this is the server side)"
+license = "GPL-3.0"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+omg-cool = "0.1"
 lucian = "0.2"
 [patch.crates-io]
+omg-cool = { path = '../omg-cool' }
 lucian = { path = '../lucian' }
