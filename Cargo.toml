@@ -1,6 +1,6 @@
 [package]
 name = "theshy_server"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 description = "a socks5 proxy written in Rust (this is the server side)"
 license = "GPL-3.0"
