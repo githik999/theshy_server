@@ -9,6 +9,3 @@ license = "GPL-3.0"
 [dependencies]
 omg-cool = "0.1"
 lucian = "0.2"
-[patch.crates-io]
-omg-cool = { path = '../omg-cool' }
-lucian = { path = '../lucian' }
