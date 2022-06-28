@@ -7,5 +7,5 @@ license = "GPL-3.0"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-omg-cool = "0.1"
-lucian = "0.2"
+omg-cool = "0.1.1"
+lucian = "0.2.1"
